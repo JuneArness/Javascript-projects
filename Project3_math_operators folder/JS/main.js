@@ -33,6 +33,17 @@ function multiplication() {
 
     }
 
+    function my_Dictionary() {
+        var Animals = {
+            Species:"Dog",
+            Color:"Black",
+            Breed:"Labrador",
+            Age:5,
+            Sound:"Bark!"
+        };
+        document,getElementById("Dictionary").innerHTML = Animal.Sound;
+    }
+
     var X = 5;
     X++;
     document.write(X);
