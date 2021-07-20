@@ -1,12 +1,12 @@
 function subtraction_Function() {
     var Subtraction = 5 - 2;
-    document.getElementById("Math).innerHTML = "5 - 2 =" + Sunbtraction;
+    document.getElementById("Math").innerHTML = "5 - 2 =" + Subtraction;
 
 }
 
 function multiplication() {
     var simple_Math = 6 * 8;
-    document.getElementById("Math).innerHTML = "6 * 8 ="+simple_Math;
+    document.getElementById("Math").innerHTML = "6 * 8 ="+simple_Math;
     }
 
     function division() {
@@ -17,13 +17,12 @@ function multiplication() {
 
     function more_Math() {
         var simple_Math = (1 + 2) * 10 / 2 -5;
-        document.getElementById("Math).innerHTML = "1 plus 2, multiplied by 10,
-        divided in half and then subtracted by 5 equals " = simple_Math;
+        document.getElementById("Math").innerHTML = "1 plus 2, multiplied by 10, divided in half and then subtracted by 5 equals " +simple_Math;
     }
 
     function modulus_Operator() {
         var simple_Math = 25 % 6;
-        document.getElementById("Math").innerHTML = "When you divide 25 by 6 you have a remainder of:" +simple_Math:
+        document.getElementById("Math").innerHTML = "When you divide 25 by 6 you have a remainder of:" +simple_Math;
 
     }
 
@@ -48,9 +47,14 @@ function multiplication() {
     X++;
     document.write(X);
 
-    VAr X = 5.25;
+    var X = 5.25;
     X--;
     document.write(X);
 
 window.alert(Math.random());
 window.alert(Math.random() * 100);
+
+function addition_Function() {
+    var addition = 2 + 2;
+    document.getElementById("Math").InnerHTML = "2 + 2 =" + addition;
+}
