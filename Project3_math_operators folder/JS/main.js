@@ -40,7 +40,7 @@ function multiplication() {
             Age:5,
             Sound:"Bark!"
         };
-        document,getElementById("Dictionary").innerHTML = Animal.Sound;
+        document.getElementById("Dictionary").innerHTML = Animals.Sound;
     }
 
     var X = 5;
