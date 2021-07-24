@@ -9,6 +9,7 @@ function my_Function() {
     console.log(2+2);
     document.write(10==10);
     document.write(3==10);
+}
     X= 10;
     Y= 10;
     document.write(X === Y);
@@ -16,14 +17,12 @@ function my_Function() {
     document.write(5>10 && 10>4);
     document.write(5>10 || 10>4);
     document.write(5>10 || 10>20);
-    function not_Function() {
-       document.getElementById("Not").innerHTML = !(20>10);
-
-    }
-    function not_Function() {
-        document.getElementById("Not").innerHTML = ! (5>10);
-        
-    }
-
+function not_Function() {
+    document.getElementById("Not").innerHTML = !(20>10);
 
 }
+function not_Function1() {
+    document.getElementById("Not").innerHTML = ! (5>10);
+    
+}
+
