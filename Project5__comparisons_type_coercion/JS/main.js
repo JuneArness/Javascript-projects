@@ -10,8 +10,11 @@ function my_Function() {
     document.write(10==10);
     document.write(3==10);
 }
-    X= 10;
-    Y= 10;
+   var a = "10";
+   var b = parseInt(a)
+   document.write("value is" + b);
+   let X= 10;
+   let Y= 10;
     document.write(X === Y);
     document.write(5>2 && 10>4);
     document.write(5>10 && 10>4);
