@@ -37,6 +37,8 @@ function myFunction() {
 var X = 10;
 var Y = "Charlie"
 
+
+    text3=text1 + text2
 function count_Function() {
     document.getElementById("Counting").innerHTML = Count();
     function Count() {

@@ -15,7 +15,7 @@ function slice_Method() {
 
 let str = "LET'S GO!!";
 str.toUpperCase()  
-let str = "Johnny";
+let str2 = "Johnny";
 str.search("Johnny")
 
 function string_Method() {
@@ -31,5 +31,5 @@ function precision_Method() {
 
 var num = 3.14159265;
 var n = num.toFixed(2);
-let str = "All work";
+let str3 = "All work";
 str.valueOf()

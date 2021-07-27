@@ -29,3 +29,7 @@ function not_Function1() {
     
 }
 
+document.write(text3=text1 + text2) {
+    text1=10;
+    text2=10;
+} 
