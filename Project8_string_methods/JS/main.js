@@ -1,4 +1,4 @@
-function full_Sentence() {
+function full_sentence() {
     var part_1 = "I have";
     var part_2 = "made this ";
     var part_3 = "into a complete ";
