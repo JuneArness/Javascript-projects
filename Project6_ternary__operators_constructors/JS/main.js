@@ -7,16 +7,8 @@ function Ride_Function() {
     document.getElementById("Ride").innerHTML = Can_ride + " to ride";
 }
 
-class Customer
-    {
-        string David Banner;
-        Boolean Active;
-        Customer(string David Banner){
-            Fullname = David Banner;
-            Active = true
-        }
 
-    }
+    
 
 function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Make = Make;
@@ -38,7 +30,7 @@ var X = 10;
 var Y = "Charlie"
 
 
-    text3=text1 + text2
+    
 function count_Function() {
     document.getElementById("Counting").innerHTML = Count();
     function Count() {

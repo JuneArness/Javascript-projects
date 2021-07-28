@@ -29,7 +29,9 @@ function not_Function1() {
     
 }
 
-document.write(text3=text1 + text2) {
-    text1=10;
-    text2=10;
-} 
+var text1=10;
+var text2=10;
+
+document.write(text3=text1 + text2) 
+ 
+document.write(typeof "Hello") 

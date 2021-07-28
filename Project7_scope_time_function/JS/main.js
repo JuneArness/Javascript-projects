@@ -1,40 +1,23 @@
-var X = 10;
-function Add_numbers_1() {
-    document.write(20 + X + "<br>");
-}
-function Add_numbers_2() {
-    document.write(X + 100);
-}
-Add_numbers_1();
-Add_numbers_2();
+x = 10;
 
-function Add_numbers_1() {
-    var X = 10:document.write(X = 100);
+function error_function() {
+    var Y = 5;
+    console.log(Z)
+    return Y+Z;
+    
 }
-Add_numbers_1();
-Add_numbers_2();
-
-function Add_numbers_1() {
-    var X = 10;
-    console.log(15 = x);
-}
-function Add_numbers_2() {
-    console.log(X + 100);
-}
-Add_numbes_1();
-Add_numbers_2();
 
 if (1 < 2) {
     document.write("The left number is smaller thsn the number on the right.")
 }
 
-function.get_Date() {
+function get_date() {
     if(new Date().getHours() < 18) {
         document,getElementById("Greeting").innerHTML = "How are you today?";
             }
 }
 
-function Age_Function() {
+function age_function() {
     Age = document.getElementById("Age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!";
@@ -45,13 +28,13 @@ function Age_Function() {
     document.getElementById("How_old_are_you?").innerHTML = Vote;
 }
 
-function Time_function() {
+function time_function() {
     var Time = new Date().getHours();
     var Reply;
-    if (Time < 12 == Time > 0) {
+    if (Time < 12 && Time > 0) {
         Reply = "It is morning time!";
     }
-    else if (Time >= 12 == Times < 18) {
+    else if (Time >= 12 && Time < 18) {
         Reply = "It is afternoon.";
     }
     else {
@@ -59,3 +42,5 @@ function Time_function() {
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
+
+error_function()
