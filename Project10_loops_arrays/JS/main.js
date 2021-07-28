@@ -11,7 +11,7 @@ function count_To_Ten() {
         const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
         Musical_Instrument.color = "blue";
         Musical_Instrument.price = "900";
-        document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " = Musical_Instrument.price;
+        document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price;
     }
     
     var X = 82;
@@ -55,5 +55,3 @@ for (let i = 0; i < 10; i++) {
     if (i === 3) { continue; }
     text += "The number is " + i + "<br>";
   }
-
-  
