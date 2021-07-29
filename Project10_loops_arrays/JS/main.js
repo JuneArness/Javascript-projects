@@ -7,6 +7,25 @@ function count_To_Ten() {
     }
     document.getElementById("Counting_to_Ten").innerHTML = Digit;
 
+    var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violen", "Trumpet", "Flute"];
+    var Content = "";
+    var Y;
+    function call_loop() {
+        for (Y = 0; Y < Instruments.length; Y++) {
+            Content += Instruments[Y] + "<br>";
+        }
+        document.getElementById("loop").innerHTML = Content;
+    }
+
+    function cat_pics() {
+        var array_function = [];
+        Cat_Picture[0] = "sleeping";
+        Cat_Picture[1] = "playing";
+        Cat_Picture[2] = "eating";
+        Cat_Picture[3] = "purring";
+        document.getElementById("Array").innerHTML = "In this picture, the cat is" + Cat_Picture[2] + ".";
+    }
+
     function constant_function() {
         const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
         Musical_Instrument.color = "blue";
@@ -21,6 +40,7 @@ function count_To_Ten() {
         document.write("<br>" + X);
     }
     document.write("<br>" + X);
+
     
     var X =82;
     document.write(X);
