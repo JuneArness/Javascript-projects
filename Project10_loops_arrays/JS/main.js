@@ -6,7 +6,7 @@ function count_To_Ten() {
         X++;
     }
     document.getElementById("Counting_to_Ten").innerHTML = Digit;
-
+}
     var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violen", "Trumpet", "Flute"];
     var Content = "";
     var Y;
@@ -19,11 +19,11 @@ function count_To_Ten() {
 
     function cat_pics() {
         var array_function = [];
-        Cat_Picture[0] = "sleeping";
-        Cat_Picture[1] = "playing";
-        Cat_Picture[2] = "eating";
-        Cat_Picture[3] = "purring";
-        document.getElementById("Array").innerHTML = "In this picture, the cat is" + Cat_Picture[2] + ".";
+        array_function[0] = "sleeping";
+        array_function[1] = "playing";
+        array_function[2] = "eating";
+        array_function[3] = "purring";
+        document.getElementById("Array").innerHTML = "In this picture, the cat is" + array_function[2] + ".";
     }
 
     function constant_function() {
@@ -66,12 +66,3 @@ let car = {
 };
 document.getElementById("Car_Object").innerHTML = car.description();
 
-for (let i = 0; i < 10; i++) {
-    if (i === 3) { break; }
-    text += "The number is " + i + "<br>";
-  }
-
-  for (let i = 0; i < 10; i++) {
-    if (i === 3) { continue; }
-    text += "The number is " + i + "<br>";
-  }
