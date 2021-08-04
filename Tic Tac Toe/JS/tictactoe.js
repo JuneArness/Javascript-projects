@@ -14,12 +14,13 @@ function placeXOrO(squareNumber) {
         //This condition checks who's turn it is.
         if (activePlayer === 'X') {
             //If activePlayer is equal to 'X', the x.png is placed in HTML.
+            select.style.backgroundImage = 'url("images/x.png")';
         } else {
             //Active player may only be 'X' or'O' so, if not 'X' it must be 'O'
             select.style.backgroundImage = 'url("images/o.png")';
-    }
+          }
         //squareNumber and activePlayer are concatented together and added to array.
-        selectedSqaures.push(squareNumber + activePlayer);
+        selectedSquares.push(squareNumber + activePlayer);
         //This calls a function to check for any win conditions.
         checkWinConditions();
         //This condition is for changing the active player.
@@ -55,7 +56,7 @@ function placeXOrO(squareNumber) {
                 //A random number between 0 and 8 is selected.
                 pickASquare = String(Math.floor(Math.random() * 9));
                 //If the random number evaluted returns true, the square hasn't been slected yet.
-                if (placeXOrO(pickASqaure)) {
+                if (placeXOrO(pickASquare)) {
                     //This lione calls the function.
                     placeXOrO(pickASquare);
                     //This changes our boolean and ends the loop.
@@ -70,7 +71,7 @@ function placeXOrO(squareNumber) {
 //drawWinLine function is called to draw line if condition is met.
 function checkWinConditions() {
     //X O, 1, 2 condition.
-    if      (arrayIncludes('0X', '1x','2x')) { drawWinLine(50, 100, 558, 100) }
+    if      (arrayIncludes('0X', '1X','2X')) { drawWinLine(50, 100, 558, 100) }
     // X 3, 4, 5 condition.
     else if (arrayIncludes('3X', '4X', '5X')) { drawWinLine(50, 304, 558, 304) }
     // X 6, 7, 8 condition.
@@ -114,9 +115,9 @@ function checkWinConditions() {
     //each win condition.
     function arrayIncludes (squareA, squareB, squareC) {
         // These 3 variables will be used to check for 3 in a row.
-        const a = selectSquares.imcludes(squareA)
-        const b = selectSquares.includes(squareB)
-        const c = selectSquares.includes(squareC)
+        const a = selectedSquares.includes(squareA)
+        const b = selectedSquares.includes(squareB)
+        const c = selectedSquares.includes(squareC)
         // If the 3 variables we pass are all icluded in our array true is 
         //returned and our else if condition executes the drawWinLine function.
         if (a === true && b === true && c === true) { return true }
@@ -144,7 +145,7 @@ function audio(audioURL) {
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line acceses our html canvas element.
     const canvas = document.getElementById('win-lines')
-    //This gives us access to methods and properties to use on canvas.
+    //This line gives us access to methods and properties to use on canvas.
     const c = canvas.getContext('2d');
     //This line indicates where the start of a lines x axis is.
     let x1 = coordX1,
@@ -168,7 +169,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //This method starts a new path
             c.beginPath();
             //This method moves us to a starting point for our line.
-            c.moveTo(x1,y1)
+            c.moveTo(x1, y1)
             //This method indicates the end point in our line.
             c.lineTo(x, y)
             //This method sets the width of our line.
@@ -191,8 +192,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //This is necessary for the 6, 4, 2 win condition
             if (x1 <= x2 && y1 >= y2) {
                 if (x < x2) { x += 10; }
-                if (y > y2) { y += 10; }
-                if (x > x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
+                if (y > y2) { y -= 10; }
+                if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
             }
         }
 
